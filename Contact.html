@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+animation-name:back;
+animation-duration:20s;
+}
+@keyframes back {
+  from {background: url('images/logo.png')}
+  to {background: url('images/logo.png')}
+}
+</style>
+	<title>Derilee Garcia</title>
+	<link rel="icon" href="images/title logo.jpg">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<header> 
+		<img src="images/logo.png">	
+		<h1>Love At</h1>
+		<h2>First Bite</h2>
+	</header>
+	
+	<nav>
+		<div class="navbar">
+		<ul>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='gallery.html'>Gallery</a></li>
+			<li><a href='autobiography.html'>AutoBiography</a></li>
+			<li><a href='Biography.html'>Biography</a></li>
+			<li><a href='Contact.html'>Contact Us</a></li>		
+		</ul>	
+		</div>
+		<div class="order">
+		<h1>order form</h1>
+		</div>
+	</nav>
+	
+	
+
+	<div class='main2'> 
+		<form>
+			<h2>Customer Information</h2>
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname" >
+			<label for="lname">Last name:</label>
+			<input type="text" id="lname" name="lname"><br><br>
+			<label for="phone.no">Phone Number:</label>
+			<input type="text" id="phone.no" name="phone.no" value="501" size="2"readonly>
+			<input type="tel" id="phone.no" name="phone.no" placeholder="000-0000" pattern="[0-9]{3}-[0-9]{4}" size="6"required><br><br>
+			<label for="emai_l">Email:</label>
+			<input type="email" id="emai_l" name="emai_l"><br><br>
+			<h2>Order Information</h2>
+			<label for="date-r">Date Required:</label>
+			<input type="date" id="date-r" name="birthday">
+			 <label for="appt">Select a time:</label>
+			<input type="time" id="appt" name="appt"><br><br>
+			<label for="flavors">Cupcake Flavors:</label><br><br>
+			 <input type="checkbox" id="1" name="1" value="cupcake1">
+			  <label for="1"> Classic Vanilla</label><br><br>
+			  <input type="checkbox" id="2" name="2" value="cupcake2">
+			  <label for="vehicle2"> Banoffee</label><br><br>
+			  <input type="checkbox" id="vehicle3" name="vehicle3" value="cupcakes3">
+			  <label for="vehicle3"> Midnight Mint</label><br><br>
+			  <input type="checkbox" id="vehicle3" name="vehicle3" value="cupcakes4">
+			  <label for="vehicle3"> Cookies & Cream</label><br><br>
+			   <input type="checkbox" id="vehicle3" name="vehicle3" value="cupcakes5">
+			  <label for="vehicle3"> Apple Crumble</label><br><br>
+			 <input type="checkbox" id="vehicle3" name="vehicle3" value="cupcakes6">
+			  <label for="vehicle3">Chocolate Orange </label><br><br>
+			   <input type="checkbox" id="vehicle3" name="vehicle3" value="cupcakes7">
+			  <label for="vehicle3"> Hazelnut</label><br><br>
+			   <input type="checkbox" id="vehicle3" name="vehicle3" value="cupcakes8">
+			  <label for="vehicle3"> Carrot</label><br><br>
+			   <input type="checkbox" id="vehicle3" name="vehicle3" value="cupcakes9">
+			  <label for="vehicle3"> Cranberry & White Chocolate</label><br><br>
+			   <input type="checkbox" id="vehicle3" name="vehicle3" value="cupcakes10">
+			  <label for="vehicle3">Lemon Drizzle </label><br><br>
+			   <input type="checkbox" id="vehicle3" name="vehicle3" value="cupcakes11">
+			  <label for="cupcakes15"> Chocolat</label><br><br>
+			   <input type="checkbox" id="cupcakes15" name="cupcakes15" value="cupcakes12">
+			  <label for="cupcakes15""> Posh Popcorn</label><br><br>
+			   <input type="checkbox" id="cupcakes15" name="cupcakes15" value="cupcakes13">
+			  <label for="vehicle3"> Purple Velvet</label><br><br>
+			   <input type="checkbox" id="cupcakes14" name="cupcakes14"value="cupcakes14">
+			  <label for="cupcakes15"> Strawberry Cheesecake</label><br><br>
+			   <input type="checkbox" id="cupcakes15" name="cupcakes15" value="cupcakes15">
+			  <label for="cupcakes15"> Banana Bread Latte</label><br><br>
+			  <label for="csize">Cupcake Size:</label>
+			  <select name="csize" id="size">
+				<option value="large">Large</option>
+				<option value="regular">Regular</option>
+				<option value="small">Small</option>
+				<option value="mini">Mini</option>
+			  </select>
+			  <br><br>
+			<label for="quantity">Quantity:</label>
+			<input type="number" id="quantity" name="quantity" min="1" max="100"><br><br>
+			<label for="myfile">Upload a photo*optional</label>
+			<input type="file" id="myfile" name="myfile"><br><br>
+			<button type="button" onclick="alert('Your Form Has Been Submitted!')">Submit</button>			
+	</div>	
+		</form> 
+
+</body>
+</html>

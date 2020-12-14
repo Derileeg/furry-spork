@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Derilee Garcia</title>
+	<link rel="icon" href="images/title logo.jpg">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<header> 
+		<img src="images/logo.png">	
+		<h1>Love At</h1>
+		<h2>First Bite</h2>
+	</header>
+	
+	<nav>
+		<div class="navbar">
+		<ul>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='gallery.html'>Gallery</a></li>
+			<li><a href='autobiography.html'>AutoBiography</a></li>
+			<li><a href='Biography.html'>Biography</a></li>
+			<li><a href='Contact.html'>Contact Us</a></li>		
+		</ul>	
+		</div>
+	</nav>
+<div class="gallery">
+	<h2>PRINCESS cupcakes Gallery</h2>
+
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 5</div>
+	  <img src="images/1.jpg" style="width:100%">
+	  <div class="textx">PRINCESS cupcakes</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 7</div>
+	  <img src="images/2.jpg" style="width:100%">
+	  <div class="textx">PRINCESS cupcakes</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 7</div>
+	  <img src="images/3.jpg" style="width:100%">
+	  <div class="textx">PRINCESS cupcakes</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 7</div>
+	  <img src="images/4.jpg" style="width:100%">
+	  <div class="textx">PRINCESS cupcakes</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">5 / 7</div>
+	  <img src="images/5.jpg" style="width:100%">
+	  <div class="textx">PRINCESS cupcakes</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">6 / 7</div>
+	  <img src="images/6.jpg" style="width:100%">
+	  <div class="textx">PRINCESS cupcakes</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">7 / 7</div>
+	  <img src="images/7.jpg" style="width:100%">
+	  <div class="textx">PRINCESS cupcakes</div>
+	</div>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
